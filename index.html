@@ -5,192 +5,230 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Inclusive Harlem Plaza</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
+* {margin:0;padding:0;box-sizing:border-box;}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
+  font-family: 'Inter', sans-serif;
+  display:flex;
+  background:#0f172a;
+  color:#fff;
 }
 
 /* SIDEBAR */
-.sidebar {
-    width: 250px;
-    background: #111;
-    color: white;
-    height: 100vh;
-    position: fixed;
-    padding: 20px;
+#sidebar {
+  width:280px;
+  height:100vh;
+  position:fixed;
+  background:#020617;
+  padding:40px 20px;
 }
 
-.sidebar h2 {
-    font-size: 20px;
+#sidebar h1 {
+  font-size:22px;
+  margin-bottom:30px;
 }
 
-.sidebar a {
-    display: block;
-    color: #ccc;
-    text-decoration: none;
-    margin: 10px 0;
+#sidebar nav a {
+  display:block;
+  color:#94a3b8;
+  margin:12px 0;
+  text-decoration:none;
 }
 
-.sidebar a:hover {
-    color: white;
+#sidebar nav a:hover {
+  color:#fff;
 }
 
-/* MAIN CONTENT */
-.main {
-    margin-left: 250px;
-    padding: 40px;
-    width: 100%;
+/* MAIN */
+#main {
+  margin-left:280px;
+  width:100%;
 }
 
+/* SECTIONS */
 section {
-    margin-bottom: 80px;
+  padding:80px 60px;
+  border-bottom:1px solid #1e293b;
 }
 
-h1 {
-    font-size: 36px;
+h2 {
+  font-size:36px;
+  margin-bottom:20px;
 }
 
+p {
+  color:#cbd5f5;
+  line-height:1.7;
+}
+
+ul {
+  margin-top:10px;
+  padding-left:20px;
+}
+
+/* HERO */
+.hero {
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.hero h2 {
+  font-size:48px;
+}
+
+/* IMAGE */
 img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 20px;
+  width:100%;
+  border-radius:12px;
+  margin-top:20px;
 }
 
-/* BEFORE AFTER GRID */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
+/* CARDS */
 .card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
+  background:#1e293b;
+  padding:20px;
+  border-radius:12px;
+  margin-top:15px;
 }
 
+/* RESPONSIVE */
+@media(max-width:900px){
+  #sidebar {
+    position:relative;
+    width:100%;
+    height:auto;
+  }
+
+  #main {
+    margin-left:0;
+  }
+}
+
+html {
+  scroll-behavior:smooth;
+}
 </style>
 </head>
 
 <body>
 
 <!-- SIDEBAR -->
-<div class="sidebar">
-    <h2>Inclusive Harlem</h2>
+<div id="sidebar">
+  <h1>Inclusive Harlem</h1>
+  <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#problem">Problem</a>
     <a href="#site">Site</a>
-    <a href="#options">Design Options</a>
-    <a href="#final">Final Proposal</a>
+    <a href="#options">Options</a>
+    <a href="#final">Final</a>
     <a href="#reflection">Reflection</a>
+  </nav>
 </div>
 
-<!-- MAIN CONTENT -->
-<div class="main">
+<!-- MAIN -->
+<div id="main">
 
 <!-- HOME -->
-<section id="home">
-    <h1>Inclusive Harlem Plaza</h1>
-    <p>Redesigning Harlem Pedestrian Plaza for comfort, dignity, and shared public use.</p>
+<section id="home" class="hero">
+  <h2>Inclusive Harlem Plaza</h2>
+  <p>Redesigning Harlem Pedestrian Plaza for comfort, dignity, and shared public use.</p>
 
-    <!-- Replace with your BEFORE/AFTER image -->
-    <img src="before-after.jpg" alt="Before After">
+  <h3>Before vs After Transformation</h3>
+  <img src="images/before-after.jpg" alt="Inclusive Harlem Redesign">
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-    <h1>About the Project</h1>
-    <p>This project redesigns Harlem Plaza to support a wide range of users by improving comfort, accessibility, dignity, and shared use.</p>
+  <h2>About the Project</h2>
 
-    <h3>Essential Question</h3>
-    <p>How can Harlem Plaza be redesigned so it feels more welcoming and usable for diverse users?</p>
+  <p><strong>Project Goal:</strong> This project redesigns Harlem Plaza to improve comfort, accessibility, dignity, and shared use.</p>
+
+  <p><strong>Essential Question:</strong><br>
+  How can Harlem Plaza be redesigned to feel more welcoming and usable for diverse users?</p>
 </section>
 
 <!-- PROBLEM -->
 <section id="problem">
-    <h1>The Problem</h1>
-    <ul>
-        <li>Lack of comfortable seating</li>
-        <li>No shade or weather protection</li>
-        <li>Poor accessibility</li>
-        <li>Weak safety and visibility</li>
-    </ul>
+  <h2>The Problem</h2>
 
-    <p><strong>Problem Statement:</strong> The plaza does not support inclusive, dignified use for diverse users.</p>
+  <p>
+  Harlem Plaza currently lacks comfortable seating, shade, accessibility, and inclusive design.
+  Many users cannot fully use the space due to limited amenities and poor layout.
+  </p>
 </section>
 
 <!-- SITE -->
 <section id="site">
-    <h1>Site / Context</h1>
+  <h2>Site / Context</h2>
 
-    <h3>User Groups</h3>
-    <ul>
-        <li>Elderly residents</li>
-        <li>People with disabilities</li>
-        <li>Families</li>
-        <li>Commuters</li>
-    </ul>
+  <p><strong>User Groups:</strong></p>
+  <ul>
+    <li>Elderly residents</li>
+    <li>People with disabilities</li>
+    <li>Families</li>
+    <li>Commuters</li>
+    <li>Unhoused individuals</li>
+  </ul>
 
-    <p>Key issues include unclear circulation, uneven comfort, and user conflicts.</p>
+  <p>
+  The site shows uneven comfort, unclear movement paths, and conflicts between different users.
+  </p>
 </section>
 
-<!-- DESIGN OPTIONS -->
+<!-- OPTIONS -->
 <section id="options">
-    <h1>Design Options</h1>
+  <h2>Design Options</h2>
 
-    <div class="grid">
-        <div class="card">
-            <h3>Comfort First Plaza</h3>
-            <p>Focus on seating, shade, and quiet zones.</p>
-        </div>
+  <div class="card">
+    <h3>Comfort First Plaza</h3>
+    <p>Focus on shaded seating, quiet areas, and rest zones.</p>
+  </div>
 
-        <div class="card">
-            <h3>Shared Use Plaza</h3>
-            <p>Flexible space for events and daily use.</p>
-        </div>
+  <div class="card">
+    <h3>Shared Use Plaza</h3>
+    <p>Create flexible spaces for multiple activities and users.</p>
+  </div>
 
-        <div class="card">
-            <h3>Community Support Plaza</h3>
-            <p>Spaces designed for dignity and support.</p>
-        </div>
-    </div>
+  <div class="card">
+    <h3>Community Support Plaza</h3>
+    <p>Design focused on dignity, inclusion, and social support.</p>
+  </div>
 </section>
 
 <!-- FINAL -->
 <section id="final">
-    <h1>Final Proposal</h1>
+  <h2>Final Proposal</h2>
 
-    <p>The final design combines comfort, accessibility, and shared use.</p>
+  <p>
+  The final design introduces shaded seating, accessible pathways, and inclusive gathering areas.
+  It supports a wide range of users while improving comfort, visibility, and shared use.
+  </p>
 
-    <ul>
-        <li>Tiered seating</li>
-        <li>Wheelchair accessibility</li>
-        <li>Shade structures</li>
-        <li>Flexible social spaces</li>
-    </ul>
-
-    <!-- Replace with your AI images -->
-    <img src="after.jpg" alt="Final Design">
+  <img src="images/before-after.jpg" alt="Final Redesign">
 </section>
 
 <!-- REFLECTION -->
 <section id="reflection">
-    <h1>Reflection on AI</h1>
+  <h2>Reflection on AI</h2>
 
-    <h3>AI Helped With:</h3>
-    <ul>
-        <li>Generating visuals</li>
-        <li>Testing design ideas</li>
-    </ul>
+  <p><strong>AI helped with:</strong></p>
+  <ul>
+    <li>Generating redesign visuals</li>
+    <li>Exploring different spatial ideas</li>
+  </ul>
 
-    <h3>Human Role:</h3>
-    <ul>
-        <li>Understanding users</li>
-        <li>Making final design decisions</li>
-    </ul>
+  <p><strong>Human decisions:</strong></p>
+  <ul>
+    <li>Understanding user needs</li>
+    <li>Defining inclusion and comfort</li>
+    <li>Selecting the final design</li>
+  </ul>
 </section>
 
 </div>
