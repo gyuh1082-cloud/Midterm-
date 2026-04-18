@@ -5,37 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Inclusive Harlem Plaza</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 * {margin:0;padding:0;box-sizing:border-box;}
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   display:flex;
-  background:#0f172a;
+  background:#0b0f19;
   color:#fff;
 }
 
 /* SIDEBAR */
 #sidebar {
-  width:280px;
+  width:300px;
   height:100vh;
   position:fixed;
-  background:#020617;
-  padding:40px 20px;
+  background:#111827;
+  padding:50px 25px;
 }
 
 #sidebar h1 {
-  font-size:22px;
-  margin-bottom:30px;
+  font-size:24px;
+  margin-bottom:40px;
 }
 
 #sidebar nav a {
   display:block;
-  color:#94a3b8;
-  margin:12px 0;
+  color:#9ca3af;
+  margin:15px 0;
   text-decoration:none;
+  font-size:15px;
+  transition:0.3s;
 }
 
 #sidebar nav a:hover {
@@ -44,29 +46,31 @@ body {
 
 /* MAIN */
 #main {
-  margin-left:280px;
+  margin-left:300px;
   width:100%;
 }
 
 /* SECTIONS */
 section {
-  padding:80px 60px;
-  border-bottom:1px solid #1e293b;
+  padding:100px 80px;
+  border-bottom:1px solid #1f2937;
 }
 
 h2 {
-  font-size:36px;
+  font-size:40px;
   margin-bottom:20px;
 }
 
 p {
-  color:#cbd5f5;
-  line-height:1.7;
+  color:#d1d5db;
+  line-height:1.8;
+  max-width:700px;
 }
 
 ul {
   margin-top:10px;
   padding-left:20px;
+  color:#d1d5db;
 }
 
 /* HERO */
@@ -78,22 +82,25 @@ ul {
 }
 
 .hero h2 {
-  font-size:48px;
+  font-size:60px;
+  margin-bottom:20px;
 }
 
 /* IMAGE */
 img {
   width:100%;
-  border-radius:12px;
-  margin-top:20px;
+  max-width:900px;
+  border-radius:16px;
+  margin-top:30px;
 }
 
 /* CARDS */
 .card {
-  background:#1e293b;
-  padding:20px;
-  border-radius:12px;
-  margin-top:15px;
+  background:#1f2937;
+  padding:25px;
+  border-radius:16px;
+  margin-top:20px;
+  max-width:600px;
 }
 
 /* RESPONSIVE */
@@ -106,6 +113,14 @@ img {
 
   #main {
     margin-left:0;
+  }
+
+  section {
+    padding:60px 30px;
+  }
+
+  .hero h2 {
+    font-size:40px;
   }
 }
 
@@ -139,8 +154,8 @@ html {
   <h2>Inclusive Harlem Plaza</h2>
   <p>Redesigning Harlem Pedestrian Plaza for comfort, dignity, and shared public use.</p>
 
-  <h3>Before vs After Transformation</h3>
-  <img src="images/before-after.jpg" alt="Inclusive Harlem Redesign">
+  <h3 style="margin-top:30px;">Before vs After Transformation</h3>
+  <img src="images/before-after.jpg" alt="Redesign">
 </section>
 
 <!-- ABOUT -->
@@ -149,7 +164,7 @@ html {
 
   <p><strong>Project Goal:</strong> This project redesigns Harlem Plaza to improve comfort, accessibility, dignity, and shared use.</p>
 
-  <p><strong>Essential Question:</strong><br>
+  <p style="margin-top:15px;"><strong>Essential Question:</strong><br>
   How can Harlem Plaza be redesigned to feel more welcoming and usable for diverse users?</p>
 </section>
 
@@ -176,7 +191,7 @@ html {
     <li>Unhoused individuals</li>
   </ul>
 
-  <p>
+  <p style="margin-top:15px;">
   The site shows uneven comfort, unclear movement paths, and conflicts between different users.
   </p>
 </section>
@@ -210,7 +225,7 @@ html {
   It supports a wide range of users while improving comfort, visibility, and shared use.
   </p>
 
-  <img src="images/before-after.jpg" alt="Final Redesign">
+  <img src="images/before-after.jpg" alt="Final Design">
 </section>
 
 <!-- REFLECTION -->
@@ -223,7 +238,7 @@ html {
     <li>Exploring different spatial ideas</li>
   </ul>
 
-  <p><strong>Human decisions:</strong></p>
+  <p style="margin-top:15px;"><strong>Human decisions:</strong></p>
   <ul>
     <li>Understanding user needs</li>
     <li>Defining inclusion and comfort</li>
