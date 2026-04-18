@@ -3,206 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Inclusive Harlem | Montefiore Square Redesign</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Inclusive Harlem Plaza</title>
 
 <style>
-* { box-sizing: border-box; }
-
 body {
-  margin: 0;
-  font-family: 'Source Sans 3', sans-serif;
-  color: #666;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
 }
 
 /* SIDEBAR */
-#header {
-  background: #4acaa8;
-  color: white;
-  width: 22em;
-  height: 100vh;
-  position: fixed;
-  padding: 4em 2em;
-  text-align: right;
+.sidebar {
+    width: 250px;
+    background: #111;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
 }
 
-#header a {
-  color: white;
-  text-decoration: none;
+.sidebar h2 {
+    font-size: 20px;
 }
 
-#nav ul {
-  list-style: none;
-  padding: 0;
+.sidebar a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin: 10px 0;
 }
 
-#nav li {
-  margin: 1em 0;
+.sidebar a:hover {
+    color: white;
 }
 
-/* MAIN */
-#wrapper {
-  margin-left: 22em;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 4em 2em;
-}
-
-/* HEADINGS */
-h2 {
-  color: #4acaa8;
-  font-size: 2.5em;
-}
-
-h3 {
-  margin-bottom: 1em;
-}
-
-/* GRID */
-.text-grid {
-  display: grid;
-  gap: 1.5em;
-  margin-top: 2em;
-}
-
-.three-up {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.text-card {
-  border: 1px solid #ddd;
-  padding: 1.5em;
-  border-radius: 6px;
-  background: #fafafa;
-}
-
-/* IMAGE SECTION */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5em;
-  margin-top: 2em;
-}
-
-.image-card {
-  border: 1px solid #e4e4e4;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-}
-
-/* SPLIT IMAGE */
-.split {
-  width: 100%;
-  height: 350px;
-  background-image: url('https://i.imgur.com/JZvs7vE.png');
-  background-size: 200% 100%;
-  background-repeat: no-repeat;
-}
-
-.split.left {
-  background-position: left center;
-}
-
-.split.right {
-  background-position: right center;
-}
-
-.caption {
-  padding: 1em;
-  font-size: 0.9em;
-  color: #777;
-}
-
-/* MOBILE */
-@media (max-width: 900px) {
-  #header {
-    position: relative;
+/* MAIN CONTENT */
+.main {
+    margin-left: 250px;
+    padding: 40px;
     width: 100%;
-    height: auto;
-    text-align: left;
-  }
-
-  #wrapper {
-    margin-left: 0;
-  }
-
-  .three-up,
-  .image-grid {
-    grid-template-columns: 1fr;
-  }
 }
+
+section {
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* BEFORE AFTER GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 </style>
 </head>
 
 <body>
 
 <!-- SIDEBAR -->
-<section id="header">
-  <h1>Inclusive Harlem</h1>
-  <p>Montefiore Square Redesign</p>
-
-  <nav id="nav">
-    <ul>
-      <li><a href="#intro">Intro</a></li>
-      <li><a href="#problem">Problem</a></li>
-      <li><a href="#site">Site</a></li>
-      <li><a href="#proposal">Proposal</a></li>
-    </ul>
-  </nav>
-</section>
-
-<!-- MAIN -->
-<div id="wrapper">
-
-<section id="intro">
-  <div class="container">
+<div class="sidebar">
     <h2>Inclusive Harlem</h2>
-    <p>Redesigning Montefiore Square for comfort, dignity, and shared public use.</p>
-  </div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#problem">Problem</a>
+    <a href="#site">Site</a>
+    <a href="#options">Design Options</a>
+    <a href="#final">Final Proposal</a>
+    <a href="#reflection">Reflection</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<!-- HOME -->
+<section id="home">
+    <h1>Inclusive Harlem Plaza</h1>
+    <p>Redesigning Harlem Pedestrian Plaza for comfort, dignity, and shared public use.</p>
+
+    <!-- Replace with your BEFORE/AFTER image -->
+    <img src="before-after.jpg" alt="Before After">
 </section>
 
+<!-- ABOUT -->
+<section id="about">
+    <h1>About the Project</h1>
+    <p>This project redesigns Harlem Plaza to support a wide range of users by improving comfort, accessibility, dignity, and shared use.</p>
+
+    <h3>Essential Question</h3>
+    <p>How can Harlem Plaza be redesigned so it feels more welcoming and usable for diverse users?</p>
+</section>
+
+<!-- PROBLEM -->
 <section id="problem">
-  <div class="container">
-    <h3>Problem</h3>
-    <p>The plaza does not equally support all users. This redesign focuses on accessibility, comfort, and inclusion for diverse Harlem communities.</p>
-  </div>
+    <h1>The Problem</h1>
+    <ul>
+        <li>Lack of comfortable seating</li>
+        <li>No shade or weather protection</li>
+        <li>Poor accessibility</li>
+        <li>Weak safety and visibility</li>
+    </ul>
+
+    <p><strong>Problem Statement:</strong> The plaza does not support inclusive, dignified use for diverse users.</p>
 </section>
 
+<!-- SITE -->
 <section id="site">
-  <div class="container">
-    <h3>Site Understanding</h3>
+    <h1>Site / Context</h1>
 
-    <div class="image-grid">
+    <h3>User Groups</h3>
+    <ul>
+        <li>Elderly residents</li>
+        <li>People with disabilities</li>
+        <li>Families</li>
+        <li>Commuters</li>
+    </ul>
 
-      <div class="image-card">
-        <div class="split left"></div>
-        <p class="caption">
-          Inclusive green space with seating, trees, and open lawn areas supporting rest and comfort.
-        </p>
-      </div>
-
-      <div class="image-card">
-        <div class="split right"></div>
-        <p class="caption">
-          Active plaza with circulation, seating, and diverse users creating a shared environment.
-        </p>
-      </div>
-
-    </div>
-  </div>
+    <p>Key issues include unclear circulation, uneven comfort, and user conflicts.</p>
 </section>
 
-<section id="proposal">
-  <div class="container">
-    <h3>Final Proposal</h3>
-    <p>A redesigned plaza that supports accessibility, dignity, and shared public life in Harlem.</p>
-  </div>
+<!-- DESIGN OPTIONS -->
+<section id="options">
+    <h1>Design Options</h1>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Comfort First Plaza</h3>
+            <p>Focus on seating, shade, and quiet zones.</p>
+        </div>
+
+        <div class="card">
+            <h3>Shared Use Plaza</h3>
+            <p>Flexible space for events and daily use.</p>
+        </div>
+
+        <div class="card">
+            <h3>Community Support Plaza</h3>
+            <p>Spaces designed for dignity and support.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL -->
+<section id="final">
+    <h1>Final Proposal</h1>
+
+    <p>The final design combines comfort, accessibility, and shared use.</p>
+
+    <ul>
+        <li>Tiered seating</li>
+        <li>Wheelchair accessibility</li>
+        <li>Shade structures</li>
+        <li>Flexible social spaces</li>
+    </ul>
+
+    <!-- Replace with your AI images -->
+    <img src="after.jpg" alt="Final Design">
+</section>
+
+<!-- REFLECTION -->
+<section id="reflection">
+    <h1>Reflection on AI</h1>
+
+    <h3>AI Helped With:</h3>
+    <ul>
+        <li>Generating visuals</li>
+        <li>Testing design ideas</li>
+    </ul>
+
+    <h3>Human Role:</h3>
+    <ul>
+        <li>Understanding users</li>
+        <li>Making final design decisions</li>
+    </ul>
 </section>
 
 </div>
